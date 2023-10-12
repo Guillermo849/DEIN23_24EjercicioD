@@ -38,10 +38,15 @@ public class NuevaPersonaController {
     public void setParent(TbPersonasController parent) {
     	this.mainController = parent;
     }
-
+    
+    /* Cierra la ventana */
     @FXML
     void cancelar(ActionEvent event) {
-    	
+    	Node n = (Node) event.getSource();
+		
+		Stage stage = (Stage) n.getScene().getWindow();
+		
+		stage.close();
     }
 
     @FXML
