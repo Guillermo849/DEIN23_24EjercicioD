@@ -64,6 +64,7 @@ public class TbPersonasController implements Initializable{
 			
 			Stage agregarStage = new Stage();
 			agregarStage.setScene(new Scene(root));
+			agregarStage.setResizable(false);
 			agregarStage.getIcons().add(ICONO);
 			agregarStage.setTitle("Nueva Persona");
 			agregarStage.showAndWait();
